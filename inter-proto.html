@@ -1,0 +1,128 @@
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Domine|Montserrat" rel="stylesheet"> 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+    <!-- <script src="script.js"></script> -->
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>Internetové protokoly</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">body { font-family: Domine, Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif} h1, h2, h3, h4, h5, h6 { font-family: Montserrat, sans }</style>
+</head>
+<body>
+
+    
+    <div class="container mt-5">
+      <div class="row">
+            <div class="col-12">
+
+      
+      <h1 id="internetové-protokoly">Internetové protokoly</h1>
+<ul>
+<li><strong>IP, IPv4, IPv6</strong> - Internet Protocol
+<ul>
+<li>základní protokol celého internetu</li>
+<li>zajišťuje přenos datagramů na základě IP adresy příjemce
+<ul>
+<li>datagram je prostě základní jednotka co se posílá po síti, fancy
+name</li>
+<li>datagram obsahuje adresu příjemce a putuje po síti nezávisle na
+ostatních datagramech</li>
+</ul></li>
+<li>protokol IP se stará i o převádění datagramů do nižších vrstev
+(ethernet, …) a zpět</li>
+<li>v4 a v6 jsou verze IP, dnes stále převažuje v4. IPv4 adresa vypadá
+jako 192.0.2.146 (4 čísla 0-255)</li>
+</ul></li>
+<li><strong>TCP</strong> - Transmission Control Protocol
+<ul>
+<li>vytváří spolehlivé spojení mezi aplikacemi</li>
+<li>doručí všechna data bez ztráty, ve správném pořadí</li>
+<li>stojí “nad IP protokolem”, je víc high level, víc ho použiješ v
+aplikacích</li>
+</ul></li>
+<li><strong>HTTP</strong> - Hypertext Transfer Protocol
+<ul>
+<li>slouží pro přenos HTML/XML dokumentů</li>
+<li>nejpoužívanější protokol, když chceš navštívit stránku tak ti jí ten
+server pošle způsobem, kterej je definovanej v tomhle protokolu</li>
+<li>HTTP neni moc zabezbečený, má verzi HTTPS, který je šifrovaný a
+bezpečný</li>
+</ul></li>
+<li><strong>FTP</strong> - File Transfer Protocol
+<ul>
+<li>protokol pro přenos souborů mezi počítači</li>
+<li>slouží pro upload i download</li>
+<li>není šifrovaný, často se doplňuje protokolem SSH</li>
+</ul></li>
+<li><strong>WWW</strong> - World Wide Web
+<ul>
+<li>WWW ≠ internet. Internet jsou jen počítače a servery propojený
+kabelama tvořící síť, kde World Wide Web jsou všechny webový stránky,
+dokumenty, apod.</li>
+<li>Jedná se o síť dokumentů a linků mezi nima, ne o síť počítačů</li>
+</ul></li>
+<li><strong>PING</strong> shell utility
+<ul>
+<li>malý program spustitelný v shellu, který slouží pro testování
+připojení a “dosažitelnosti” nějakého jiného počítače</li>
+<li>také měří čas, za který se zpráva dostane na druhý počítač a
+zpátky</li>
+<li>v případě že lze druhému počítači (nebo webové adrese nebo IP
+adrese) poslat zprávu, uvidí program bude vypisovat, že obdržel od
+druhého počítače nějaká data a jak dlouho to trvalo. Program ukončíme
+ctrl-C</li>
+<li>v opačném případě často nebude dělat nic</li>
+</ul></li>
+<li><strong>TRACERT</strong> shell utility
+<ul>
+<li>vypíše kompletní cestu, kterou zpráva podstoupila na cestě k
+cíli</li>
+<li>vypíše jména a identity zařízení skrz která šla</li>
+<li>vypíše čas který to trvalo poslat a dostat zpátky</li>
+</ul></li>
+</ul>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
